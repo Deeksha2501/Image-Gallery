@@ -115,7 +115,6 @@ app.get('/', async (req, res) => {
 
 
 app.post('/upload', upload.single('file'), async (req, res) => {
-  res.json({ file: req.file });
   try{
   const filename = req.file.filename;
   const name = req.body.name;
@@ -133,11 +132,11 @@ app.post('/upload', upload.single('file'), async (req, res) => {
     id : img_id,
   });
   console.log(img);
-  res.redirect('/');
 }
 catch(e){
   console.log(e);
 }
+res.redirect('/');
 });
 
 app.post('/search' , async(req , res)=>{
