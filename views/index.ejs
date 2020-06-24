@@ -14,6 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="icon.png" type="image/png">
 
     <style>
       img {
@@ -64,8 +65,14 @@
         outline: 0;
         border: 0;
       }
+      .footer{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+      }
     </style>
-    <title>Image uploading</title>
+    <title>Image Gallery | Deeksha Sharma</title>
   </head>
 
   <body>
@@ -150,6 +157,10 @@
           <% } %>
         </div>
       </div>
+    </div>
+
+    <div class="footer" >
+      Made with <span style="color: red;">&#10084;</span> by Deeksha Sharma
     </div>
 
     <script
